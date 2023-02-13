@@ -1,11 +1,12 @@
-using Funeral.Api.Filter;
+using Funeral.Api.Errors;
 using Funeral.Application;
 using Funeral.Infrastructure;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// builder.Services.AddControllers(options => options.Filters.Add<ErrorHandlingFilterAttribute>());
 builder.Services.AddControllers();
+builder.Services.AddSingleton<ProblemDetailsFactory,FuneralProblemDetailsFactory>();
 builder.Services
   .AddApplication()
   .AddInfrastructure(builder.Configuration);
@@ -20,7 +21,6 @@ var app = builder.Build();
         app.UseSwaggerUI();
     }
     //app.UseAuthorization(); //use Identity with Google OAuth 2.0
-    //app.UseMiddleware<ErrorHandlingMiddleware>();
     app.UseExceptionHandler("/error");
     app.UseHttpsRedirection();
     app.MapControllers();

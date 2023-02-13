@@ -1,3 +1,4 @@
+using Funeral.Application.Common.Errors;
 using Funeral.Application.Common.Interfaces.Authentication;
 using Funeral.Application.Common.Interfaces.Persistance;
 using Funeral.Domain.Entities;
@@ -18,7 +19,7 @@ namespace Funeral.Application.Services.Authentication
         public AuthenticationResult Register(string firstName, string lastName, string phoneNumber, string password)
         {
             if (_userRepository.GetUserByPhone(phoneNumber) is not null)
-                throw new Exception("User already exists");
+                throw new DuplicatePhoneException();
             var user = new User
             {
                 FirstName = firstName,
