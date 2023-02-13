@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "hV+4xMMInvOjUz4fcdcMLfA1DuOhcp32ZHABFVqPmUvkCxuXh1F6lII11SukcUmBvRas0bMdHEVykANaqDjx/A==",
+  "success": true,
+  "projectFilePath": "E:\\work\\projects\\Funeral\\Funeral.Application\\Funeral.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Kuririn\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\Kuririn\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

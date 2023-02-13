@@ -1,0 +1,12 @@
+E:\work\projects\Funeral\Funeral.Contracts\bin\Debug\net7.0\Funeral.Contracts.deps.json
+E:\work\projects\Funeral\Funeral.Contracts\bin\Debug\net7.0\Funeral.Contracts.dll
+E:\work\projects\Funeral\Funeral.Contracts\bin\Debug\net7.0\Funeral.Contracts.pdb
+E:\work\projects\Funeral\Funeral.Contracts\obj\Debug\net7.0\Funeral.Contracts.csproj.AssemblyReference.cache
+E:\work\projects\Funeral\Funeral.Contracts\obj\Debug\net7.0\Funeral.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+E:\work\projects\Funeral\Funeral.Contracts\obj\Debug\net7.0\Funeral.Contracts.AssemblyInfoInputs.cache
+E:\work\projects\Funeral\Funeral.Contracts\obj\Debug\net7.0\Funeral.Contracts.AssemblyInfo.cs
+E:\work\projects\Funeral\Funeral.Contracts\obj\Debug\net7.0\Funeral.Contracts.csproj.CoreCompileInputs.cache
+E:\work\projects\Funeral\Funeral.Contracts\obj\Debug\net7.0\Funeral.Contracts.dll
+E:\work\projects\Funeral\Funeral.Contracts\obj\Debug\net7.0\refint\Funeral.Contracts.dll
+E:\work\projects\Funeral\Funeral.Contracts\obj\Debug\net7.0\Funeral.Contracts.pdb
+E:\work\projects\Funeral\Funeral.Contracts\obj\Debug\net7.0\ref\Funeral.Contracts.dll

@@ -1,0 +1,12 @@
+E:\work\projects\Funeral\Funeral.Domain\bin\Debug\net7.0\Funeral.Domain.deps.json
+E:\work\projects\Funeral\Funeral.Domain\bin\Debug\net7.0\Funeral.Domain.dll
+E:\work\projects\Funeral\Funeral.Domain\bin\Debug\net7.0\Funeral.Domain.pdb
+E:\work\projects\Funeral\Funeral.Domain\obj\Debug\net7.0\Funeral.Domain.csproj.AssemblyReference.cache
+E:\work\projects\Funeral\Funeral.Domain\obj\Debug\net7.0\Funeral.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\work\projects\Funeral\Funeral.Domain\obj\Debug\net7.0\Funeral.Domain.AssemblyInfoInputs.cache
+E:\work\projects\Funeral\Funeral.Domain\obj\Debug\net7.0\Funeral.Domain.AssemblyInfo.cs
+E:\work\projects\Funeral\Funeral.Domain\obj\Debug\net7.0\Funeral.Domain.csproj.CoreCompileInputs.cache
+E:\work\projects\Funeral\Funeral.Domain\obj\Debug\net7.0\Funeral.Domain.dll
+E:\work\projects\Funeral\Funeral.Domain\obj\Debug\net7.0\refint\Funeral.Domain.dll
+E:\work\projects\Funeral\Funeral.Domain\obj\Debug\net7.0\Funeral.Domain.pdb
+E:\work\projects\Funeral\Funeral.Domain\obj\Debug\net7.0\ref\Funeral.Domain.dll
