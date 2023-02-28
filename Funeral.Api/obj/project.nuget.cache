@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "EPshze3ik7ch0pST9QQP0cDJ0Wnc7DfttnDh60x4ndQ8roHZWm3vjowLM8t+LVFdLm6BQMUyUrCUVQ3/pJ+j0A==",
+  "dgSpecHash": "89wlDgM43PpMTAtwC5HCTRP3DykjLDm9jIjG4fFHebI6wMBF16NNzT9YwGDFjVIWmQOvuqs4FQ66LtzES/810A==",
   "success": true,
   "projectFilePath": "E:\\work\\projects\\Funeral\\Funeral.Api\\Funeral.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kuririn\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Kuririn\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\Kuririn\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
     "C:\\Users\\Kuririn\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\Kuririn\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Kuririn\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",

@@ -1,4 +1,4 @@
-using Funeral.Api.Errors;
+using Funeral.Api.Common.Errors;
 using Funeral.Application;
 using Funeral.Infrastructure;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
