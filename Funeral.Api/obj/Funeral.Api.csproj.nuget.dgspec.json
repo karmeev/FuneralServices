@@ -1,0 +1,362 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Api/Funeral.Api.csproj": {}
+  },
+  "projects": {
+    "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Api/Funeral.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Api/Funeral.Api.csproj",
+        "projectName": "Funeral.Api",
+        "projectPath": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Api/Funeral.Api.csproj",
+        "packagesPath": "/home/kuririn/.nuget/packages/",
+        "outputPath": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kuririn/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Application/Funeral.Application.csproj": {
+                "projectPath": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Application/Funeral.Application.csproj"
+              },
+              "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Contracts/Funeral.Contracts.csproj": {
+                "projectPath": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Contracts/Funeral.Contracts.csproj"
+              },
+              "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Infrastructure/Funeral.Infrastructure.csproj": {
+                "projectPath": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Infrastructure/Funeral.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "ErrorOr": {
+              "target": "Package",
+              "version": "[1.2.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.103/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Application/Funeral.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Application/Funeral.Application.csproj",
+        "projectName": "Funeral.Application",
+        "projectPath": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Application/Funeral.Application.csproj",
+        "packagesPath": "/home/kuririn/.nuget/packages/",
+        "outputPath": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kuririn/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Domain/Funeral.Domain.csproj": {
+                "projectPath": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Domain/Funeral.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "ErrorOr": {
+              "target": "Package",
+              "version": "[1.2.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.103/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Contracts/Funeral.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Contracts/Funeral.Contracts.csproj",
+        "projectName": "Funeral.Contracts",
+        "projectPath": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Contracts/Funeral.Contracts.csproj",
+        "packagesPath": "/home/kuririn/.nuget/packages/",
+        "outputPath": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Contracts/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kuririn/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.103/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Domain/Funeral.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Domain/Funeral.Domain.csproj",
+        "projectName": "Funeral.Domain",
+        "projectPath": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Domain/Funeral.Domain.csproj",
+        "packagesPath": "/home/kuririn/.nuget/packages/",
+        "outputPath": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kuririn/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "ErrorOr": {
+              "target": "Package",
+              "version": "[1.2.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.103/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Infrastructure/Funeral.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Infrastructure/Funeral.Infrastructure.csproj",
+        "projectName": "Funeral.Infrastructure",
+        "projectPath": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Infrastructure/Funeral.Infrastructure.csproj",
+        "packagesPath": "/home/kuririn/.nuget/packages/",
+        "outputPath": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kuririn/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Application/Funeral.Application.csproj": {
+                "projectPath": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Application/Funeral.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Razor": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.26.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.103/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

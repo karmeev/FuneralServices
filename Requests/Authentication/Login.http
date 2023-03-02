@@ -1,0 +1,9 @@
+@host=http://localhost:5162
+
+POST {{host}}/auth/login
+Content-Type: application/json
+
+{
+    "PhoneNumber":"89273736888",
+    "Password":"his pass"
+}

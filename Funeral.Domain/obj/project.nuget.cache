@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "c4OhVqAbJP+R1jtj1C+Sw5znFQWI0HyyvBQmGAfal8Zb/A/UPfthXeN1oLekYvRfCxa+Mu+oxlIAvOA+27UjOg==",
+  "success": true,
+  "projectFilePath": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Domain/Funeral.Domain.csproj",
+  "expectedPackageFiles": [
+    "/home/kuririn/.nuget/packages/erroror/1.2.1/erroror.1.2.1.nupkg.sha512"
+  ],
+  "logs": []
+}

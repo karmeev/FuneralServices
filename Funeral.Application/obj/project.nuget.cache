@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "DLJyzRsqkaZm9SrwNZcIOtl16ZX3xjDQ25Tv9cD1FccFWY1A1oob2ru8ambyY6Mn2Xpy0T2rNyN5eVDGBAf0Ag==",
+  "success": true,
+  "projectFilePath": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Application/Funeral.Application.csproj",
+  "expectedPackageFiles": [
+    "/home/kuririn/.nuget/packages/erroror/1.2.1/erroror.1.2.1.nupkg.sha512",
+    "/home/kuririn/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "/home/kuririn/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
