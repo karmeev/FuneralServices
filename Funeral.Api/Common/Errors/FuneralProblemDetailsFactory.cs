@@ -1,10 +1,12 @@
 using System.Diagnostics;
+using ErrorOr;
+using Funeral.Api.Common.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.Extensions.Options;
 
-namespace Funeral.Api.Errors
+namespace Funeral.Api.Common.Errors
 {
     public class FuneralProblemDetailsFactory : ProblemDetailsFactory
     {
@@ -90,8 +92,13 @@ namespace Funeral.Api.Errors
             {
                 problemDetails.Extensions["traceId"] = traceId;
             }
-            problemDetails.Extensions.Add("customProperty", "customValue");
-            _configure?.Invoke(new() { HttpContext = httpContext!, ProblemDetails = problemDetails });
+            var errors = httpContext?.Items[HttpContextItemKey.Errors] as List<Error>;
+            if(errors is not null)
+            {
+                problemDetails.Extensions.Add("errorCodes", errors.Select(e => e.Code));
+            }
+
+            //_configure?.Invoke(new() { HttpContext = httpContext!, ProblemDetails = problemDetails });
         }
     }
 

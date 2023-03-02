@@ -1,6 +1,8 @@
+using ErrorOr;
 using Funeral.Application.Common.Errors;
 using Funeral.Application.Common.Interfaces.Authentication;
 using Funeral.Application.Common.Interfaces.Persistance;
+using Funeral.Domain.Common.Errors;
 using Funeral.Domain.Entities;
 
 namespace Funeral.Application.Services.Authentication
@@ -16,10 +18,10 @@ namespace Funeral.Application.Services.Authentication
             _userRepository = userRepository;
         }
 
-        public AuthenticationResult Register(string firstName, string lastName, string phoneNumber, string password)
+        public ErrorOr<AuthenticationResult> Register(string firstName, string lastName, string phoneNumber, string password)
         {
             if (_userRepository.GetUserByPhone(phoneNumber) is not null)
-                throw new DuplicatePhoneException();
+                return Errors.User.DuplicatePhone;
             var user = new User
             {
                 FirstName = firstName,
@@ -35,13 +37,16 @@ namespace Funeral.Application.Services.Authentication
             return new AuthenticationResult(user, token);
         }
 
-        public AuthenticationResult Login(string phoneNumber, string password)
+        public ErrorOr<AuthenticationResult> Login(string phoneNumber, string password)
         {
             if (_userRepository.GetUserByPhone(phoneNumber) is not User user)
-                throw new Exception("User doesn't exists");
+            {
+                return Errors.Authentication.InvalidCredentials;
+            }
             if (user.Password != password)
-                throw new Exception("Invalid password");
-
+            {
+                return new[] {Errors.Authentication.InvalidCredentials};
+            }
             var token = _jwtTokenGenerator.GenerateToken(user);
 
             return new AuthenticationResult(user, token);

@@ -1,12 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 using Funeral.Application.Services.Authentication;
 using Funeral.Contracts.Authentication;
+using Funeral.Domain.Common.Errors;
 
 namespace Funeral.Api.Controllers
 {
-    [ApiController]
     [Route("auth")]
-    public class AuthenticationController : ControllerBase
+    public class AuthenticationController : ApiController
     {
         private readonly IAuthenticationService _authenticationService;
 
@@ -18,19 +18,16 @@ namespace Funeral.Api.Controllers
         [HttpPost("register")]
         public IActionResult Register(RegisterRequest request)
         {
-            var authResult = _authenticationService.Register(
+            ErrorOr.ErrorOr<AuthenticationResult> authResult = _authenticationService.Register(
                 request.FirstName,
                 request.LastName,
                 request.PhoneNumber,
                 request.Password);
-            var response = new AuthenticationResponse(
-                authResult.User.Id,
-                authResult.User.FirstName,
-                authResult.User.LastName,
-                authResult.User.Phone,
-                authResult.Token
+
+            return authResult.Match(
+                authResult => Ok(MapAuthResult(authResult)),
+                errors => Problem(errors)
             );
-            return Ok(response);
         }
         [HttpPost("login")]
         public IActionResult Login(LoginRequest request)
@@ -38,14 +35,27 @@ namespace Funeral.Api.Controllers
             var authResult = _authenticationService.Login(
                 request.PhoneNumber,
                 request.Password);
-            var response = new AuthenticationResponse(
-                authResult.User.Id,
-                authResult.User.FirstName,
-                authResult.User.LastName,
-                authResult.User.Phone,
-                authResult.Token
+            if (authResult.IsError && authResult.FirstError == Errors.Authentication.InvalidCredentials)
+            {
+                return Problem(
+                    statusCode: StatusCodes.Status401Unauthorized,
+                    title: authResult.FirstError.Description);
+            }
+            return authResult.Match(
+                authResult => Ok(MapAuthResult(authResult)),
+                errors => Problem(errors)
             );
-            return Ok(response);
+        }
+
+        private static AuthenticationResponse MapAuthResult(AuthenticationResult authResult)
+        {
+            return new AuthenticationResponse(
+                            authResult.User.Id,
+                            authResult.User.FirstName,
+                            authResult.User.LastName,
+                            authResult.User.Phone,
+                            authResult.Token
+                        );
         }
     }
 }

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "YthBwLKYe6p0U7AVjpc+ALR/5gS4EoDOWUYj2O95/MDWuqGv8OJ4u5oml4ia3LcMI7okbxc0tw9y22Rv5DfZxQ==",
+  "dgSpecHash": "mTR127Za/FWtmHrMQB+g/4RINPDbtuG6zH0Ud+ObhqWFZAtnehPav3r/xWQFNrsJg9U85aP556jhp82S/LWh0Q==",
   "success": true,
   "projectFilePath": "E:\\work\\projects\\Funeral\\Funeral.Infrastructure\\Funeral.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kuririn\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Kuririn\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\Kuririn\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
     "C:\\Users\\Kuririn\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Kuririn\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\Kuririn\\.nuget\\packages\\microsoft.aspnetcore.razor.design\\2.2.0\\microsoft.aspnetcore.razor.design.2.2.0.nupkg.sha512",
