@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Funeral.Domain.Entities;
 
-namespace Funeral.Application.Services.Authentication
+namespace Funeral.Application.Services.Authentication.Common
 {
     public record AuthenticationResult(
         User User,
