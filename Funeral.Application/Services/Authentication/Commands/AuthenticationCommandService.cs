@@ -2,17 +2,18 @@ using ErrorOr;
 using Funeral.Application.Common.Errors;
 using Funeral.Application.Common.Interfaces.Authentication;
 using Funeral.Application.Common.Interfaces.Persistance;
+using Funeral.Application.Services.Authentication.Common;
 using Funeral.Domain.Common.Errors;
 using Funeral.Domain.Entities;
 
 namespace Funeral.Application.Services.Authentication.Commands
 {
-    public class IAuthenticationQueryService : IAuthenticationCommandService
+    public class AuthenticationCommandService : IAuthenticationCommandService
     {
         private readonly IJwtTokenGenerator _jwtTokenGenerator;
         private readonly IUserRepository _userRepository;
 
-        public IAuthenticationQueryService(IJwtTokenGenerator jwtTokenGenerator, IUserRepository userRepository)
+        public AuthenticationCommandService(IJwtTokenGenerator jwtTokenGenerator, IUserRepository userRepository)
         {
             _jwtTokenGenerator = jwtTokenGenerator;
             _userRepository = userRepository;

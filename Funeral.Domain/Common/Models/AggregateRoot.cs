@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace Funeral.Domain.Common.Models
 {
     public abstract class AggregateRoot : Entity<TId>
-    where TId : notnull
+    //where TId : notnull
     {
         protected AggregateRoot(TId id) : base (id)
         {

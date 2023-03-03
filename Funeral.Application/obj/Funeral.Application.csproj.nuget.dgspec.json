@@ -1,33 +1,40 @@
 {
   "format": 1,
   "restore": {
-    "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Application/Funeral.Application.csproj": {}
+    "E:\\work\\projects\\Funeral\\Funeral.Application\\Funeral.Application.csproj": {}
   },
   "projects": {
-    "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Application/Funeral.Application.csproj": {
+    "E:\\work\\projects\\Funeral\\Funeral.Application\\Funeral.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Application/Funeral.Application.csproj",
+        "projectUniqueName": "E:\\work\\projects\\Funeral\\Funeral.Application\\Funeral.Application.csproj",
         "projectName": "Funeral.Application",
-        "projectPath": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Application/Funeral.Application.csproj",
-        "packagesPath": "/home/kuririn/.nuget/packages/",
-        "outputPath": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Application/obj/",
+        "projectPath": "E:\\work\\projects\\Funeral\\Funeral.Application\\Funeral.Application.csproj",
+        "packagesPath": "C:\\Users\\Kuririn\\.nuget\\packages\\",
+        "outputPath": "E:\\work\\projects\\Funeral\\Funeral.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/kuririn/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Kuririn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Domain/Funeral.Domain.csproj": {
-                "projectPath": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Domain/Funeral.Domain.csproj"
+              "E:\\work\\projects\\Funeral\\Funeral.Domain\\Funeral.Domain.csproj": {
+                "projectPath": "E:\\work\\projects\\Funeral\\Funeral.Domain\\Funeral.Domain.csproj"
               }
             }
           }
@@ -45,6 +52,14 @@
             "ErrorOr": {
               "target": "Package",
               "version": "[1.2.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
@@ -67,26 +82,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.103/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Domain/Funeral.Domain.csproj": {
+    "E:\\work\\projects\\Funeral\\Funeral.Domain\\Funeral.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Domain/Funeral.Domain.csproj",
+        "projectUniqueName": "E:\\work\\projects\\Funeral\\Funeral.Domain\\Funeral.Domain.csproj",
         "projectName": "Funeral.Domain",
-        "projectPath": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Domain/Funeral.Domain.csproj",
-        "packagesPath": "/home/kuririn/.nuget/packages/",
-        "outputPath": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Domain/obj/",
+        "projectPath": "E:\\work\\projects\\Funeral\\Funeral.Domain\\Funeral.Domain.csproj",
+        "packagesPath": "C:\\Users\\Kuririn\\.nuget\\packages\\",
+        "outputPath": "E:\\work\\projects\\Funeral\\Funeral.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/kuririn/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Kuririn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -126,7 +148,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.103/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

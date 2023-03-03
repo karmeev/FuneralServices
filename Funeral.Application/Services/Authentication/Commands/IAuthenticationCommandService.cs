@@ -1,5 +1,6 @@
 
 using ErrorOr;
+using Funeral.Application.Services.Authentication.Common;
 
 namespace Funeral.Application.Services.Authentication.Commands
 {

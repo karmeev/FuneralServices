@@ -27,15 +27,21 @@ namespace Funeral.Domain.Common.Models
             return !Equals(left, right);
         }
 
+/*
         public override bool Equals(Entity<TId> other)
         {
             return Equals((object?)other);
         }
-
+*/
         // override object.GetHashCode
         public override int GetHashCode()
         {
             return Id.GetHashCode();
+        }
+
+        public bool Equals(Entity<TId>? other)
+        {
+            return Equals((object?)other);
         }
     }
 }

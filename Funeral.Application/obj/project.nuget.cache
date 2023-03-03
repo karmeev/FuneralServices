@@ -1,12 +1,26 @@
 {
   "version": 2,
-  "dgSpecHash": "DLJyzRsqkaZm9SrwNZcIOtl16ZX3xjDQ25Tv9cD1FccFWY1A1oob2ru8ambyY6Mn2Xpy0T2rNyN5eVDGBAf0Ag==",
+  "dgSpecHash": "OfMZxDOd9xHNPZ8ry9asAdCS9gC823P/LOogHlxWSia31MSgS6MZKrxbOlzUrM8HkLaKoHpl571JdWHDMI5xlw==",
   "success": true,
-  "projectFilePath": "/home/kuririn/Documents/Projects/FuneralServices-master/Funeral.Application/Funeral.Application.csproj",
+  "projectFilePath": "E:\\work\\projects\\Funeral\\Funeral.Application\\Funeral.Application.csproj",
   "expectedPackageFiles": [
-    "/home/kuririn/.nuget/packages/erroror/1.2.1/erroror.1.2.1.nupkg.sha512",
-    "/home/kuririn/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
-    "/home/kuririn/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+    "C:\\Users\\Kuririn\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
+    "C:\\Users\\Kuririn\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
+    "C:\\Users\\Kuririn\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\Kuririn\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
+    "C:\\Users\\Kuririn\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\Kuririn\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Версия обнаруженного пакета нарушает ограничение зависимости: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 требуется MediatR (>= 11.0.0 && < 12.0.0), но в результате разрешения получена версия MediatR 12.0.1.",
+      "libraryId": "MediatR",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

@@ -1,31 +1,28 @@
 using Microsoft.AspNetCore.Mvc;
-using Funeral.Application.Services.Authentication;
 using Funeral.Contracts.Authentication;
 using Funeral.Domain.Common.Errors;
+using Funeral.Application.Services.Authentication.Common;
+using MediatR;
+using Funeral.Application.Authentication.Commands.Register;
+using Funeral.Application.Authentication.Queries.Login;
 
 namespace Funeral.Api.Controllers
 {
     [Route("auth")]
     public class AuthenticationController : ApiController
     {
-        private readonly IAuthenticationCommandService _authenticationCommandService;
-        private readonly IAuthenticationQueryService _authenticationQueryService;
+        private readonly ISender _mediator;
 
-        public AuthenticationController(IAuthenticationService authenticationService,
-                                        IAuthenticationQueryService authenticationQueryService)
+        public AuthenticationController(ISender mediator)
         {
-            _authenticationCommandService = authenticationService;
-            _authenticationQueryService = authenticationQueryService;
+            _mediator = mediator;
         }
 
         [HttpPost("register")]
-        public IActionResult Register(RegisterRequest request)
+        public async Task<IActionResult> Register(RegisterRequest request)
         {
-            ErrorOr.ErrorOr<AuthenticationResult> authResult = _authenticationCommandService.Register(
-                request.FirstName,
-                request.LastName,
-                request.PhoneNumber,
-                request.Password);
+            var command = new RegisterCommand(request.FirstName,request.LastName,request.PhoneNumber,request.Password);
+            ErrorOr.ErrorOr<AuthenticationResult> authResult = await _mediator.Send(command);
 
             return authResult.Match(
                 authResult => Ok(MapAuthResult(authResult)),
@@ -33,11 +30,11 @@ namespace Funeral.Api.Controllers
             );
         }
         [HttpPost("login")]
-        public IActionResult Login(LoginRequest request)
+        public async Task<IActionResult> Login(LoginRequest request)
         {
-            var authResult = _authenticationQueryService.Login(
-                request.PhoneNumber,
-                request.Password);
+            var query = new LoginQuery(request.PhoneNumber,request.Password);
+            var authResult = await _mediator.Send(query);
+
             if (authResult.IsError && authResult.FirstError == Errors.Authentication.InvalidCredentials)
             {
                 return Problem(
