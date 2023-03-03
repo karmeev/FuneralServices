@@ -29,8 +29,8 @@ namespace Funeral.Application.Authentication.Commands.Register
                 FirstName = command.FirstName,
                 LastName = command.LastName,
                 Position = "His position",
-                Password = command.Password,
-                Phone = command.PhoneNumber
+                PhoneNumber = command.PhoneNumber,
+                Password = command.Password
             };
             _userRepository.Add(user);
 

@@ -91,3 +91,6 @@ E:\work\projects\Funeral\Funeral.Api\obj\Debug\net7.0\Funeral.Api.MvcApplication
 E:\work\projects\Funeral\Funeral.Api\bin\Debug\net7.0\Mapster.dll
 E:\work\projects\Funeral\Funeral.Api\bin\Debug\net7.0\Mapster.Core.dll
 E:\work\projects\Funeral\Funeral.Api\bin\Debug\net7.0\Mapster.DependencyInjection.dll
+E:\work\projects\Funeral\Funeral.Api\bin\Debug\net7.0\FluentValidation.dll
+E:\work\projects\Funeral\Funeral.Api\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
+E:\work\projects\Funeral\Funeral.Api\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll

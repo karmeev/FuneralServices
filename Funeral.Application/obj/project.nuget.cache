@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "NpDiqM7x2tuDwbDH16WWOi1YWgF5O3hTe20tSEt0/K6/wMJokI6NyXd+fNcokDK4Fsi7tligPa06ZQzAOFbwtg==",
+  "dgSpecHash": "rLE86iTLkaxk2I4v9mgKSR4DiIuL0i1hG81yPNs5oeWWwjvyCfowc+/OGuLBnPNDhOlLqrpc60q+sdvRuFLlrQ==",
   "success": true,
   "projectFilePath": "E:\\work\\projects\\Funeral\\Funeral.Application\\Funeral.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kuririn\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
+    "C:\\Users\\Kuririn\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\Kuririn\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "C:\\Users\\Kuririn\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.1\\fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
     "C:\\Users\\Kuririn\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
     "C:\\Users\\Kuririn\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\Kuririn\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",

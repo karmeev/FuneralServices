@@ -17,7 +17,7 @@ namespace Funeral.Infrastructure.Persistance
 
         public User? GetUserByPhone(string phone)
         {
-            return _users.SingleOrDefault(u => u.Phone == phone);
+            return _users.SingleOrDefault(u => u.PhoneNumber == phone);
         }
     }
 }

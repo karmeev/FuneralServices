@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "w8eAJDP08cWBTFHcGegL7MmvKbekoS4OANp8eAdLxxp6GG68iZ0XdMjCHrrM1uZ6pcN4bH5O/5JDAthHJWLyQQ==",
+  "dgSpecHash": "3zglidbUvCGabewbdh4dYZO288LNSX8Qh8z6iBzSdtW2tPaAm03fXlLBjjGvnOQsVmbSY+8G/q1EysBgJsN1cA==",
   "success": true,
   "projectFilePath": "E:\\work\\projects\\Funeral\\Funeral.Api\\Funeral.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kuririn\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Kuririn\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\Kuririn\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
+    "C:\\Users\\Kuririn\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\Kuririn\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "C:\\Users\\Kuririn\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.1\\fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
     "C:\\Users\\Kuririn\\.nuget\\packages\\mapster\\7.3.0\\mapster.7.3.0.nupkg.sha512",
     "C:\\Users\\Kuririn\\.nuget\\packages\\mapster.core\\1.2.0\\mapster.core.1.2.0.nupkg.sha512",
     "C:\\Users\\Kuririn\\.nuget\\packages\\mapster.dependencyinjection\\1.0.0\\mapster.dependencyinjection.1.0.0.nupkg.sha512",

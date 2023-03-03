@@ -28,8 +28,8 @@ namespace Funeral.Application.Services.Authentication.Commands
                 FirstName = firstName,
                 LastName = lastName,
                 Position = "His position",
-                Password = password,
-                Phone = phoneNumber
+                PhoneNumber = phoneNumber,
+                Password = password
             };
             _userRepository.Add(user);
 
