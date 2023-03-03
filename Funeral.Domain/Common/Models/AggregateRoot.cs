@@ -10,7 +10,6 @@ namespace Funeral.Domain.Common.Models
     {
         protected AggregateRoot(TId id) : base (id)
         {
-            
         }
     }
 }

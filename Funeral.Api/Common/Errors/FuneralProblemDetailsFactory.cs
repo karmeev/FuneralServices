@@ -11,14 +11,15 @@ namespace Funeral.Api.Common.Errors
     public class FuneralProblemDetailsFactory : ProblemDetailsFactory
     {
         private readonly ApiBehaviorOptions _options;
-        private readonly Action<ProblemDetailsContext>? _configure;
+        //private readonly Action<ProblemDetailsContext>? _configure;
 
         public FuneralProblemDetailsFactory(
-            IOptions<ApiBehaviorOptions> options,
-            IOptions<ProblemDetailsOptions>? problemDetailsOptions = null)
+            IOptions<ApiBehaviorOptions> options
+            //,IOptions<ProblemDetailsOptions>? problemDetailsOptions = null
+            )
         {
             _options = options?.Value ?? throw new ArgumentNullException(nameof(options));
-            _configure = problemDetailsOptions?.Value?.CustomizeProblemDetails;
+            //_configure = problemDetailsOptions?.Value?.CustomizeProblemDetails;
         }
 
         public override ProblemDetails CreateProblemDetails(
@@ -101,5 +102,4 @@ namespace Funeral.Api.Common.Errors
             //_configure?.Invoke(new() { HttpContext = httpContext!, ProblemDetails = problemDetails });
         }
     }
-
 }

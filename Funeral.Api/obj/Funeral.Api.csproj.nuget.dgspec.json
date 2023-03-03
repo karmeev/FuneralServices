@@ -59,9 +59,17 @@
               "target": "Package",
               "version": "[1.2.1, )"
             },
+            "Mapster": {
+              "target": "Package",
+              "version": "[7.3.0, )"
+            },
+            "Mapster.DependencyInjection": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "MediatR": {
               "target": "Package",
-              "version": "[12.0.1, )"
+              "version": "[11.1.0, )"
             },
             "Microsoft.AspNetCore.Mvc": {
               "target": "Package",
@@ -150,7 +158,7 @@
             },
             "MediatR": {
               "target": "Package",
-              "version": "[12.0.1, )"
+              "version": "[11.1.0, )"
             },
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
@@ -352,14 +360,6 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Razor": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.AspNetCore.Razor.Design": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.2, )"

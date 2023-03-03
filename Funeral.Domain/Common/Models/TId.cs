@@ -7,6 +7,5 @@ namespace Funeral.Domain.Common.Models
 {
     public class TId
     {
-        
     }
 }

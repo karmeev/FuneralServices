@@ -1,3 +1,4 @@
+using Funeral.Api;
 using Funeral.Api.Common.Errors;
 using Funeral.Application;
 using Funeral.Infrastructure;
@@ -5,9 +6,8 @@ using Microsoft.AspNetCore.Mvc.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
-builder.Services.AddSingleton<ProblemDetailsFactory,FuneralProblemDetailsFactory>();
 builder.Services
+  .AddPresentation()
   .AddApplication()
   .AddInfrastructure(builder.Configuration);
 builder.Services.AddEndpointsApiExplorer();
@@ -25,4 +25,4 @@ var app = builder.Build();
     app.UseHttpsRedirection();
     app.MapControllers();
     app.Run();
-};
+}

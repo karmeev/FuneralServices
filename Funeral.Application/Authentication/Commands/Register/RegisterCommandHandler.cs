@@ -21,6 +21,7 @@ namespace Funeral.Application.Authentication.Commands.Register
         }
         public async Task<ErrorOr<AuthenticationResult>> Handle(RegisterCommand command, CancellationToken cancellationToken)
         {
+            await Task.CompletedTask;
             if (_userRepository.GetUserByPhone(command.PhoneNumber) is not null)
                 return Errors.User.DuplicatePhone;
             var user = new User

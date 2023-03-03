@@ -88,3 +88,6 @@ E:\work\projects\Funeral\Funeral.Api\obj\Debug\net7.0\Funeral.Api.csproj.CopyCom
 E:\work\projects\Funeral\Funeral.Api\obj\Debug\net7.0\Funeral.Api.genruntimeconfig.cache
 E:\work\projects\Funeral\Funeral.Api\obj\Debug\net7.0\ref\Funeral.Api.dll
 E:\work\projects\Funeral\Funeral.Api\obj\Debug\net7.0\Funeral.Api.MvcApplicationPartsAssemblyInfo.cs
+E:\work\projects\Funeral\Funeral.Api\bin\Debug\net7.0\Mapster.dll
+E:\work\projects\Funeral\Funeral.Api\bin\Debug\net7.0\Mapster.Core.dll
+E:\work\projects\Funeral\Funeral.Api\bin\Debug\net7.0\Mapster.DependencyInjection.dll

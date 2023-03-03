@@ -23,6 +23,7 @@ namespace Funeral.Application.Authentication.Commands.Login
 
         public async Task<ErrorOr<AuthenticationResult>> Handle(LoginQuery query, CancellationToken cancellationToken)
         {
+            await Task.CompletedTask;
             if (_userRepository.GetUserByPhone(query.PhoneNumber) is not User user)
             {
                 return Errors.Authentication.InvalidCredentials;

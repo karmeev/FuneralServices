@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Funeral.Api",
+    "\\Funeral.Application",
+    "\\Funeral.Contracts",
+    "\\Funeral.Domain",
+    "\\Funeral.Infrastructure"
   ],
   "SelectedNode": "\\Funeral.sln",
   "PreviewInSolutionExplorer": false

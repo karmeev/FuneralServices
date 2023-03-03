@@ -9,7 +9,7 @@ public abstract class ValueObject :  IEquatable<ValueObject>
         if (obj is null || obj.GetType() != GetType())
         {
             return false;
-        };
+        }
 
         var ValueObject = (ValueObject)obj;
 
