@@ -14,18 +14,18 @@ namespace Funeral.Api.Controllers
     public class AuthenticationController : ApiController
     {
         private readonly ISender _mediator;
-        //private readonly IMapper _mapper;
+        private readonly IMapper _mapper;
 
-        public AuthenticationController(ISender mediator/*, IMapper mapper*/)
+        public AuthenticationController(ISender mediator, IMapper mapper)
         {
             _mediator = mediator;
-            //_mapper = mapper;
+            _mapper = mapper;
         }
 
         [HttpPost("register")]
         public async Task<IActionResult> Register(RegisterRequest request)
         {
-            //var command = _mapper.Map<RegisterCommand>(request);
+            var command = _mapper.Map<RegisterCommand>(request);
 
             //ErrorOr<AuthenticationResult> authResult = await _mediator.Send(command);
 
@@ -33,17 +33,16 @@ namespace Funeral.Api.Controllers
             //    authResult => Ok(_mapper.Map<AuthenticationResponse>(authResult)),
             //    errors => Problem(errors)
             //);
-            var command = new RegisterCommand(request.FirstName,request.LastName,request.PhoneNumber,request.Password);
             ErrorOr<AuthenticationResult> authResult = await _mediator.Send(command);
             return authResult.Match(
-                authResult => Ok(MapAuthResult(authResult)),
+                authResult => Ok(_mapper.Map<AuthenticationResponse>(authResult)),
                 errors => Problem(errors)
             );
         }
         [HttpPost("login")]
         public async Task<IActionResult> Login(LoginRequest request)
         {
-            //var query = _mapper.Map<LoginQuery>(request);
+            var query = _mapper.Map<LoginQuery>(request);
             //var authResult = await _mediator.Send(query);
 
             //if (authResult.IsError && authResult.FirstError == Errors.Authentication.InvalidCredentials)
@@ -56,7 +55,6 @@ namespace Funeral.Api.Controllers
             //    authResult => Ok(_mapper.Map<AuthenticationResponse>(authResult)),
             //    errors => Problem(errors)
             //);
-            var query = new LoginQuery(request.PhoneNumber,request.Password);
             var authResult = await _mediator.Send(query);
             if (authResult.IsError && authResult.FirstError == Errors.Authentication.InvalidCredentials)
             {
@@ -65,20 +63,9 @@ namespace Funeral.Api.Controllers
                     title: authResult.FirstError.Description);
             }
             return authResult.Match(
-                authResult => Ok(MapAuthResult(authResult)),
+                authResult => Ok(_mapper.Map<AuthenticationResponse>(authResult)),
                 errors => Problem(errors)
             );
-        }
-
-        private static AuthenticationResponse MapAuthResult(AuthenticationResult authResult)
-        {
-            return new AuthenticationResponse(
-                authResult.User.Id,
-                authResult.User.FirstName,
-                authResult.User.LastName,
-                authResult.User.PhoneNumber,
-                authResult.User.Password
-                );
         }
     }
 }
