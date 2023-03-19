@@ -14,8 +14,8 @@ public static class DependencyInjection
     public static IServiceCollection AddApplication(this IServiceCollection services)
     {
         //services.AddScoped<IWorkerService,WorkerService>();
-        services.AddScoped<IAuthenticationCommandService, AuthenticationCommandService>();
-        services.AddScoped<IAuthenticationQueryService, AuthenticationQueryService>();
+        //services.AddScoped<IAuthenticationCommandService, AuthenticationCommandService>();
+        //services.AddScoped<IAuthenticationQueryService, AuthenticationQueryService>();
         services.AddMediatR(typeof(DependencyInjection).Assembly);
         //services.AddScoped(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
         //services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());

@@ -6,6 +6,7 @@ using MediatR;
 using Funeral.Application.Authentication.Commands.Register;
 using Funeral.Application.Authentication.Queries.Login;
 using MapsterMapper;
+using ErrorOr;
 
 namespace Funeral.Api.Controllers
 {
@@ -13,32 +14,50 @@ namespace Funeral.Api.Controllers
     public class AuthenticationController : ApiController
     {
         private readonly ISender _mediator;
-        private readonly IMapper _mapper;
+        //private readonly IMapper _mapper;
 
-        public AuthenticationController(ISender mediator, IMapper mapper)
+        public AuthenticationController(ISender mediator/*, IMapper mapper*/)
         {
             _mediator = mediator;
-            _mapper = mapper;
+            //_mapper = mapper;
         }
 
         [HttpPost("register")]
         public async Task<IActionResult> Register(RegisterRequest request)
         {
-            var command = _mapper.Map<RegisterCommand>(request);
+            //var command = _mapper.Map<RegisterCommand>(request);
 
-            ErrorOr.ErrorOr<AuthenticationResult> authResult = await _mediator.Send(command);
+            //ErrorOr<AuthenticationResult> authResult = await _mediator.Send(command);
 
+            //return authResult.Match(
+            //    authResult => Ok(_mapper.Map<AuthenticationResponse>(authResult)),
+            //    errors => Problem(errors)
+            //);
+            var command = new RegisterCommand(request.FirstName,request.LastName,request.PhoneNumber,request.Password);
+            ErrorOr<AuthenticationResult> authResult = await _mediator.Send(command);
             return authResult.Match(
-                authResult => Ok(_mapper.Map<AuthenticationResponse>(authResult)),
+                authResult => Ok(MapAuthResult(authResult)),
                 errors => Problem(errors)
             );
         }
         [HttpPost("login")]
         public async Task<IActionResult> Login(LoginRequest request)
         {
-            var query = _mapper.Map<LoginQuery>(request);
-            var authResult = await _mediator.Send(query);
+            //var query = _mapper.Map<LoginQuery>(request);
+            //var authResult = await _mediator.Send(query);
 
+            //if (authResult.IsError && authResult.FirstError == Errors.Authentication.InvalidCredentials)
+            //{
+            //    return Problem(
+            //        statusCode: StatusCodes.Status401Unauthorized,
+            //        title: authResult.FirstError.Description);
+            //}
+            //return authResult.Match(
+            //    authResult => Ok(_mapper.Map<AuthenticationResponse>(authResult)),
+            //    errors => Problem(errors)
+            //);
+            var query = new LoginQuery(request.PhoneNumber,request.Password);
+            var authResult = await _mediator.Send(query);
             if (authResult.IsError && authResult.FirstError == Errors.Authentication.InvalidCredentials)
             {
                 return Problem(
@@ -46,9 +65,20 @@ namespace Funeral.Api.Controllers
                     title: authResult.FirstError.Description);
             }
             return authResult.Match(
-                authResult => Ok(_mapper.Map<AuthenticationResponse>(authResult)),
+                authResult => Ok(MapAuthResult(authResult)),
                 errors => Problem(errors)
             );
+        }
+
+        private static AuthenticationResponse MapAuthResult(AuthenticationResult authResult)
+        {
+            return new AuthenticationResponse(
+                authResult.User.Id,
+                authResult.User.FirstName,
+                authResult.User.LastName,
+                authResult.User.PhoneNumber,
+                authResult.User.Password
+                );
         }
     }
 }
