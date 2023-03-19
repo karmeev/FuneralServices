@@ -1,20 +1,19 @@
-using System;
 namespace Funeral.Domain.Common.Models;
 
 public abstract class ValueObject :  IEquatable<ValueObject>
 {
     public abstract IEnumerable<object> GetEqualityComponents();
-    public override bool Equals(object obj)
+    public override bool Equals(object? obj)
     {
         if (obj is null || obj.GetType() != GetType())
         {
             return false;
         }
 
-        var ValueObject = (ValueObject)obj;
+        var valueObject = (ValueObject)obj;
 
         return GetEqualityComponents()
-                 .SequenceEqual(ValueObject.GetEqualityComponents());
+                 .SequenceEqual(valueObject.GetEqualityComponents());
     }
 
     public static bool operator ==(ValueObject left, ValueObject right)
@@ -32,7 +31,7 @@ public abstract class ValueObject :  IEquatable<ValueObject>
         .Aggregate((x,y) => x^y);
     }
 
-    public bool Equals(ValueObject other)
+    public bool Equals(ValueObject? other)
     {
         return Equals((object?)other);
     }

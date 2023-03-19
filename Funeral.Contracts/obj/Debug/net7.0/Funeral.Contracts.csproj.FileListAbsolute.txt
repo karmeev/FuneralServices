@@ -22,3 +22,6 @@ E:\work\projects\Funeral\Funeral.Contracts\obj\Debug\net7.0\Funeral.Contracts.dl
 E:\work\projects\Funeral\Funeral.Contracts\obj\Debug\net7.0\refint\Funeral.Contracts.dll
 E:\work\projects\Funeral\Funeral.Contracts\obj\Debug\net7.0\Funeral.Contracts.pdb
 E:\work\projects\Funeral\Funeral.Contracts\obj\Debug\net7.0\ref\Funeral.Contracts.dll
+E:\work\projects\Funeral\Funeral.Contracts\bin\Debug\net7.0\Funeral.Domain.dll
+E:\work\projects\Funeral\Funeral.Contracts\bin\Debug\net7.0\Funeral.Domain.pdb
+E:\work\projects\Funeral\Funeral.Contracts\obj\Debug\net7.0\Funeral.Contracts.csproj.CopyComplete

@@ -1932,6 +1932,9 @@
         }
       },
       "Funeral.Contracts/1.0.0": {
+        "dependencies": {
+          "Funeral.Domain": "1.0.0"
+        },
         "runtime": {
           "Funeral.Contracts.dll": {}
         }

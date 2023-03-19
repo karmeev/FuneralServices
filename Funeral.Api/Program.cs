@@ -6,10 +6,9 @@ using Microsoft.AspNetCore.Mvc.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services
-  .AddPresentation()
-  .AddApplication()
-  .AddInfrastructure(builder.Configuration);
+builder.Services.AddPresentation();
+builder.Services.AddApplication();
+builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

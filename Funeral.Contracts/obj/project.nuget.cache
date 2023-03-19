@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "FBVXK0s1Idr3rqQLLTKZyBZJaV51vkzdn1IpI6IfZSjXywnUQHN1o+2vBZkDF9qVpP2eQlgyw74ZBJ0GGc/YLQ==",
+  "dgSpecHash": "8n2S1w7N8TsnKYHqeLZme99dY0/Muj+7OdBo+ieNWydNE4GWFBWNmj7rROyeZ5H04qAjqZh1Opxs6zTty0ps3A==",
   "success": true,
   "projectFilePath": "E:\\work\\projects\\Funeral\\Funeral.Contracts\\Funeral.Contracts.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Kuririn\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Funeral.Domain.Common.Models
 {
     public abstract class Entity<TId> : IEquatable<Entity<TId>>
@@ -14,7 +9,7 @@ namespace Funeral.Domain.Common.Models
         }
 
         public TId Id { get; protected set; }
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             return obj is Entity<TId> entity && Id.Equals(entity.Id);
         }

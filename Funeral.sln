@@ -3,23 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funeral.Api", "Funeral.Api\Funeral.Api.csproj", "{53904F19-EB1F-479C-9A7D-EBC005E30734}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Funeral.Api", "Funeral.Api\Funeral.Api.csproj", "{53904F19-EB1F-479C-9A7D-EBC005E30734}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funeral.Application", "Funeral.Application\Funeral.Application.csproj", "{70113120-B3B0-42D9-9689-0CE3A3B915D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Funeral.Application", "Funeral.Application\Funeral.Application.csproj", "{70113120-B3B0-42D9-9689-0CE3A3B915D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funeral.Contracts", "Funeral.Contracts\Funeral.Contracts.csproj", "{CB006C38-D7F3-413D-978E-97476CA1F064}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Funeral.Contracts", "Funeral.Contracts\Funeral.Contracts.csproj", "{CB006C38-D7F3-413D-978E-97476CA1F064}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funeral.Domain", "Funeral.Domain\Funeral.Domain.csproj", "{D09CB6FE-D356-4986-A30F-5B37155B24BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Funeral.Domain", "Funeral.Domain\Funeral.Domain.csproj", "{D09CB6FE-D356-4986-A30F-5B37155B24BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funeral.Infrastructure", "Funeral.Infrastructure\Funeral.Infrastructure.csproj", "{92F7FE2E-9C2E-4B24-BA53-A73AA888C591}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Funeral.Infrastructure", "Funeral.Infrastructure\Funeral.Infrastructure.csproj", "{92F7FE2E-9C2E-4B24-BA53-A73AA888C591}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Request", "Request", "{984A8950-BC20-484A-968A-E97F16465E33}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentication", "{35E89CF6-4153-4A43-A92C-C1D4116BD9DB}"
+	ProjectSection(SolutionItems) = preProject
+		Login.http = Login.http
+		Register.http = Register.http
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Order", "Order", "{10AD9CEE-890F-45A1-9546-95A70596688F}"
+	ProjectSection(SolutionItems) = preProject
+		CreateOrder.http = CreateOrder.http
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{53904F19-EB1F-479C-9A7D-EBC005E30734}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -42,5 +52,15 @@ Global
 		{92F7FE2E-9C2E-4B24-BA53-A73AA888C591}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92F7FE2E-9C2E-4B24-BA53-A73AA888C591}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92F7FE2E-9C2E-4B24-BA53-A73AA888C591}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{35E89CF6-4153-4A43-A92C-C1D4116BD9DB} = {984A8950-BC20-484A-968A-E97F16465E33}
+		{10AD9CEE-890F-45A1-9546-95A70596688F} = {984A8950-BC20-484A-968A-E97F16465E33}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED93E509-B0D0-4651-887F-F3EBF3963FDE}
 	EndGlobalSection
 EndGlobal

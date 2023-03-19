@@ -225,7 +225,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "E:\\work\\projects\\Funeral\\Funeral.Domain\\Funeral.Domain.csproj": {
+                "projectPath": "E:\\work\\projects\\Funeral\\Funeral.Domain\\Funeral.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
