@@ -26,6 +26,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Order", "Order", "{10AD9CEE
 		CreateOrder.http = CreateOrder.http
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{F5230AB4-65F0-4A90-93FE-9B4A0542CFE2}"
+	ProjectSection(SolutionItems) = preProject
+		Api.md = Api.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DomainModels", "DomainModels", "{2FB56033-954B-4B00-AA65-ACF03D26DC71}"
+	ProjectSection(SolutionItems) = preProject
+		Aggregates.Order.md = Aggregates.Order.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F2D1A032-5A4A-49FB-A896-38ABADE87A5D}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +74,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{35E89CF6-4153-4A43-A92C-C1D4116BD9DB} = {984A8950-BC20-484A-968A-E97F16465E33}
 		{10AD9CEE-890F-45A1-9546-95A70596688F} = {984A8950-BC20-484A-968A-E97F16465E33}
+		{2FB56033-954B-4B00-AA65-ACF03D26DC71} = {F5230AB4-65F0-4A90-93FE-9B4A0542CFE2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ED93E509-B0D0-4651-887F-F3EBF3963FDE}

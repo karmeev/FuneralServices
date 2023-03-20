@@ -1,5 +1,5 @@
 @host=http://localhost:5162
-@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkMzA0MGRkMS1iODFmLTRkMmItYjg1MS0yZmM3ZmQ3NTBkMzUiLCJnaXZlbl9uYW1lIjoiS3VyaXJpbiIsImZhbWlseV9uYW1lIjoiU2hhZG93IiwianRpIjoiMTU1ZTNlODEtNTI5ZS00ZGE2LTk5YTQtNDI5MTNiZTI4ODNiIiwiZXhwIjowLCJpc3MiOiJGdW5lcmFsIiwiYXVkIjoiRnVuZXJhbCJ9.J-uyFe1l_Z_1BgFt_9fWu4_glD_an8GAzWuR8o8PTJE
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3YmFlYmMwNS02NzdmLTRjNDgtODk4Ny1iNmI2ODQ1MzFhYmMiLCJnaXZlbl9uYW1lIjoiS3VyaXJpbiIsImZhbWlseV9uYW1lIjoiU2hhZG93IiwianRpIjoiYzVhOGY3OGYtZDFkNy00M2IwLWE0YWUtY2JiZTFlMmNiNmIzIiwiZXhwIjowLCJpc3MiOiJGdW5lcmFsIiwiYXVkIjoiRnVuZXJhbCJ9.ZYpT10mDvL8UT2SIJX1jtGSmWAjuzj8aj-NbN7tLB6o
 @hostId=asdf
 
 POST {{host}}/host/{{hostId}}/order
@@ -10,12 +10,13 @@ Authorization: Bearer {{token}}
     "id": "000000-00000-000000-0000000-00000000000",
     "userId": "000000-00000-000000-0000000-00000000000",
     "orderId": "000000-00000-000000-0000000-00000000000",
-    "information": "000000-00000-000000-0000000-00000000000",
+    "otherInformation": "000000-00000-000000-0000000-00000000000",
     "storageId": "000000-00000-000000-0000000-00000000000",
     "orderPrice": 0,
     "prepayment": 0,
     "reminder": 0,
     "sellerProcent": 0,
     "createdDateTime": "2023-01-01T00:00:00.0000000Z",
-    "updatedDateTime": "2023-01-01T00:00:00.0000000Z"
+    "updatedDateTime": "2023-01-01T00:00:00.0000000Z",
+    "hostId": "000000-00000-000000-0000000-00000000000"
 }

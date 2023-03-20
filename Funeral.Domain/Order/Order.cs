@@ -1,7 +1,5 @@
-using System;
-
 using Funeral.Domain.Common.Models;
-using Funeral.Domain.Order;
+using Funeral.Domain.Host.ValueObjects;
 using Funeral.Domain.Storage;
 using Funeral.Domain.User;
 
@@ -11,50 +9,32 @@ namespace Funeral.Domain.Order
     {
         public Order(UserId userId,
                      OrderId orderId,
-                     OtherInformation otherInformation,
-                     DateTime lifeDate,
-                     DateTime deadDate,
+                     string otherInformation,
                      StorageId storageId,
-                     string polish,
-                     string annex,
-                     string address,
-                     string phone,
-                     string deliveryAddress,
                      int orderPrice,
                      int prepayment,
                      int reminder,
                      int sellerProcent,
                      DateTime createdDateTime,
-                     DateTime updatedDateTime) : base(orderId)
+                     DateTime updatedDateTime,
+                     HostId hostId) : base(orderId)
         {
             UserId = userId;
             OtherInformation = otherInformation;
-            LifeDate = lifeDate;
-            DeadDate = deadDate;
             StorageId = storageId;
-            Polish = polish;
-            Annex = annex;
-            Address = address;
-            Phone = phone;
-            DeliveryAddress = deliveryAddress;
             OrderPrice = orderPrice;
             Prepayment = prepayment;
             Reminder = reminder;
             SellerProcent = sellerProcent;
             CreatedDateTime = createdDateTime;
             UpdatedDateTime = updatedDateTime;
+            HostId = hostId;
         }
 
         public UserId UserId { get; }
-        public OtherInformation OtherInformation { get; }
-        public DateTime LifeDate { get; }
-        public DateTime DeadDate { get; }
+        public HostId HostId { get; }
+        public string OtherInformation { get; }
         public StorageId StorageId { get; }
-        public string Polish { get; }
-        public string Annex { get; }
-        public string Address { get; }
-        public string Phone { get; }
-        public string DeliveryAddress { get; }
         public int OrderPrice { get; }
         public int Prepayment { get; }
         public int Reminder { get; }
@@ -64,38 +44,26 @@ namespace Funeral.Domain.Order
 
         public static Order Create(
             UserId userId,
-            OtherInformation otherInformation,
+            string otherInformation,
             StorageId storageId,
-            DateTime lifeDate,
-            DateTime deadDate,
-            string polish,
-            string annex,
-            string address,
-            string phone,
-            string deliveryAddress,
             int orderPrice,
             int prepayment,
             int reminder,
-            int sellerProcent)
+            int sellerProcent,
+            HostId hostId)
         {
             return new(
                 userId,
                 OrderId.CreateUnique(),
                 otherInformation,
-                lifeDate,
-                deadDate,
                 storageId,
-                polish,
-                annex,
-                address,
-                phone,
-                deliveryAddress,
                 orderPrice,
                 prepayment,
                 reminder,
                 sellerProcent,
                 DateTime.Now,
-                DateTime.Now
+                DateTime.Now,
+                hostId
             );
         }
         /*
@@ -106,22 +74,5 @@ namespace Funeral.Domain.Order
         {
         }
         */
-        public OtherInformation AddInformation(
-            string obeliskForm,
-            string pedestalForm,
-            string funeralForm,
-            string funeralColor,
-            string upPartObelisk,
-            string botPartObelisk,
-            string otherDesign)
-        {
-            return new(obeliskForm,
-                       pedestalForm,
-                       funeralForm,
-                       funeralColor,
-                       upPartObelisk,
-                       botPartObelisk,
-                       otherDesign);
-        }
     }
 }

@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "C//aQJLQLJ5+aVUcz41OKL+kszB4oFCrJwBK8OHiCmOP4izzdusdqVDavDj4NU0OKRhdiILZSht31CNXIo0ltg==",
+  "dgSpecHash": "jpNQU0E6lQPtaGQO5PhXaj5TbXoZshWvj3wsN/FeRaN0mgrrnHQn6acaGDTME5xVQthhhqtkvi9yP9zhlxS2kw==",
   "success": true,
   "projectFilePath": "E:\\work\\projects\\Funeral\\Funeral.Domain\\Funeral.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Kuririn\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512"
+    "C:\\Users\\Kuririn\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
+    "C:\\Users\\Kuririn\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.435\\stylecop.analyzers.1.2.0-beta.435.nupkg.sha512",
+    "C:\\Users\\Kuririn\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.435\\stylecop.analyzers.unstable.1.2.0.435.nupkg.sha512"
   ],
   "logs": []
 }

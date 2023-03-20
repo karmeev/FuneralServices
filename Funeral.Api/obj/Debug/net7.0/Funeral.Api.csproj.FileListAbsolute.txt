@@ -94,3 +94,4 @@ E:\work\projects\Funeral\Funeral.Api\bin\Debug\net7.0\Mapster.DependencyInjectio
 E:\work\projects\Funeral\Funeral.Api\bin\Debug\net7.0\FluentValidation.dll
 E:\work\projects\Funeral\Funeral.Api\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
 E:\work\projects\Funeral\Funeral.Api\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+E:\work\projects\Funeral\Funeral.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

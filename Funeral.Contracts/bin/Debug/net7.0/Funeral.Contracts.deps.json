@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v7.0": {
       "Funeral.Contracts/1.0.0": {
         "dependencies": {
-          "Funeral.Domain": "1.0.0"
+          "Funeral.Domain": "1.0.0",
+          "StyleCop.Analyzers": "1.2.0-beta.435"
         },
         "runtime": {
           "Funeral.Contracts.dll": {}
@@ -22,6 +23,12 @@
           }
         }
       },
+      "StyleCop.Analyzers/1.2.0-beta.435": {
+        "dependencies": {
+          "StyleCop.Analyzers.Unstable": "1.2.0.435"
+        }
+      },
+      "StyleCop.Analyzers.Unstable/1.2.0.435": {},
       "Funeral.Domain/1.0.0": {
         "dependencies": {
           "ErrorOr": "1.2.1"
@@ -44,6 +51,20 @@
       "sha512": "sha512-5xcbQErEPQKq2z/sLwSaFPX3T2G7x4ISX0us0X7jSxXSQT/wlfOOhw4knPUN/GWOf2strhuzdvRA36JViwvu+A==",
       "path": "erroror/1.2.1",
       "hashPath": "erroror.1.2.1.nupkg.sha512"
+    },
+    "StyleCop.Analyzers/1.2.0-beta.435": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TADk7vdGXtfTnYCV7GyleaaRTQjfoSfZXprQrVMm7cSJtJbFc1QIbWPyLvrgrfGdfHbGmUPvaN4ODKNxg2jgPQ==",
+      "path": "stylecop.analyzers/1.2.0-beta.435",
+      "hashPath": "stylecop.analyzers.1.2.0-beta.435.nupkg.sha512"
+    },
+    "StyleCop.Analyzers.Unstable/1.2.0.435": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ouwPWZxbOV3SmCZxIRqHvljkSzkCyi1tDoMzQtDb/bRP8ctASV/iRJr+A2Gdj0QLaLmWnqTWDrH82/iP+X80Lg==",
+      "path": "stylecop.analyzers.unstable/1.2.0.435",
+      "hashPath": "stylecop.analyzers.unstable.1.2.0.435.nupkg.sha512"
     },
     "Funeral.Domain/1.0.0": {
       "type": "project",

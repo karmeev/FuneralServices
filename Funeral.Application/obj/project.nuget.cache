@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rLE86iTLkaxk2I4v9mgKSR4DiIuL0i1hG81yPNs5oeWWwjvyCfowc+/OGuLBnPNDhOlLqrpc60q+sdvRuFLlrQ==",
+  "dgSpecHash": "3npX6g5WeX0gF2RTF/R/45C+eAWR1Rj1UVqi3JO73BURframvwqk6VO4a61mhk9dUqDwnD16XFsJvAp+Eehtmw==",
   "success": true,
   "projectFilePath": "E:\\work\\projects\\Funeral\\Funeral.Application\\Funeral.Application.csproj",
   "expectedPackageFiles": [
@@ -12,7 +12,9 @@
     "C:\\Users\\Kuririn\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\Kuririn\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\Kuririn\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
-    "C:\\Users\\Kuririn\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+    "C:\\Users\\Kuririn\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Kuririn\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.435\\stylecop.analyzers.1.2.0-beta.435.nupkg.sha512",
+    "C:\\Users\\Kuririn\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.435\\stylecop.analyzers.unstable.1.2.0.435.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,16 +1,19 @@
-using Microsoft.AspNetCore.Mvc;
-using Funeral.Contracts.Authentication;
-using Funeral.Domain.Common.Errors;
-using Funeral.Application.Services.Authentication.Common;
-using MediatR;
+using ErrorOr;
 using Funeral.Application.Authentication.Commands.Register;
 using Funeral.Application.Authentication.Queries.Login;
+using Funeral.Application.Services.Authentication.Common;
+using Funeral.Contracts.Authentication;
+using Funeral.Domain.Common.Errors;
 using MapsterMapper;
-using ErrorOr;
+using MediatR;
+
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Funeral.Api.Controllers
 {
     [Route("auth")]
+    [AllowAnonymous]
     public class AuthenticationController : ApiController
     {
         private readonly ISender _mediator;
